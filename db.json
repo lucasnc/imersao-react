@@ -1,0 +1,16 @@
+{
+    "categorias": [
+        {
+            "id": 1,
+            "name": "Talks & Documentary",
+            "description": "",
+            "color": "#cbd1ff"
+        },
+        {
+            "id": 2,
+            "name": "Education",
+            "description": "",
+            "color": "#cbd1ff"
+        }
+    ]
+}
