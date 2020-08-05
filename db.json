@@ -4,13 +4,13 @@
       "id": 1,
       "titulo": "Talks & Documentary",
       "descricao": "",
-      "cor": "#cbd1ff"
+      "cor": "#6BD1FF"
     },
     {
       "id": 2,
       "titulo": "Education",
       "descricao": "",
-      "cor": "#cbd1ff"
+      "cor": "#6b5be2"
     }
   ],
   "videos": [
@@ -33,6 +33,36 @@
       "url": "https://www.youtube.com/watch?v=ci1PJexnfNE&t",
       "categoriaId": 1,
       "id": 3
+    },
+    {
+      "titulo": "Clonando interface do Nubank (+ ANIMAÇÕES) com React Native",
+      "url": "https://www.youtube.com/watch?v=DDm0M_rZLJo",
+      "categoriaId": 2,
+      "id": 4
+    },
+    {
+      "titulo": "Running an SQL Injection Attack - Computerphile",
+      "url": "https://www.youtube.com/watch?v=ciNHn38EyRc",
+      "categoriaId": 2,
+      "id": 5
+    },
+    {
+      "titulo": "Machine Learning: como ensinar uma máquina a aprender | Nerdologia Tech",
+      "url": "https://www.youtube.com/watch?v=mhe5e2B9bL8",
+      "categoriaId": 2,
+      "id": 6
+    },
+    {
+      "titulo": "Why Programming Is Important?",
+      "url": "https://www.youtube.com/watch?v=Dv7gLpW91DM&t",
+      "categoriaId": 1,
+      "id": 7
+    },
+    {
+      "titulo": "Vue.js: O Documentário",
+      "url": "https://www.youtube.com/watch?v=OrxmtDw4pVI&t",
+      "categoriaId": 1,
+      "id": 8
     }
   ]
 }
