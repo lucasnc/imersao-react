@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import PageDefault from '../../../components/PageDefault';
 import FormField from '../../../components/FormField';
 import Button from '../../../components/Button';
+import useForm from '../../../hooks/useForm';
 
 function CadastroCategoria() {
   const defaultValues = {
@@ -11,19 +12,9 @@ function CadastroCategoria() {
     color: '#000',
   };
 
+  const { handleChange, values, clearForm } = useForm(defaultValues);
+
   const [categories, setCategories] = useState([]);
-  const [values, setValues] = useState(defaultValues);
-
-  function setValue(key, value) {
-    setValues({
-      ...values,
-      [key]: value,
-    });
-  }
-
-  function handleChange(e) {
-    setValue(e.target.getAttribute('name'), e.target.value);
-  }
 
   useEffect(() => {
     const baseUrl = 'http://localhost:8080/categorias';
@@ -42,14 +33,14 @@ function CadastroCategoria() {
         e.preventDefault();
         setCategories([...categories, values]);
 
-        setValues(defaultValues);
+        clearForm(defaultValues);
       }}
       >
         <FormField
           label="Nome"
           type="text"
           name="name"
-          value={values.nome}
+          value={values.titulo}
           onChange={handleChange}
         />
 
@@ -58,7 +49,7 @@ function CadastroCategoria() {
           type="text"
           name="description"
           as="textarea"
-          value={values.description}
+          value={values.descricao}
           onChange={handleChange}
         />
         {/* <div>
@@ -83,15 +74,14 @@ function CadastroCategoria() {
           onChange={handleChange}
         />
 
-        <Button>
+        <Button className="ButtonLink">
           Salvar
         </Button>
       </form>
 
       <ul>
-        {categories.map((category, index) => (
-          // eslint-disable-next-line react/no-array-index-key
-          <li key={`${category}${index}`}>
+        {categories.map((category) => (
+          <li key={category.id}>
             {category.name}
           </li>
         ))}

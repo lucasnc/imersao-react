@@ -1,16 +1,38 @@
 {
-    "categorias": [
-        {
-            "id": 1,
-            "name": "Talks & Documentary",
-            "description": "",
-            "color": "#cbd1ff"
-        },
-        {
-            "id": 2,
-            "name": "Education",
-            "description": "",
-            "color": "#cbd1ff"
-        }
-    ]
+  "categorias": [
+    {
+      "id": 1,
+      "titulo": "Talks & Documentary",
+      "descricao": "",
+      "cor": "#cbd1ff"
+    },
+    {
+      "id": 2,
+      "titulo": "Education",
+      "descricao": "",
+      "cor": "#cbd1ff"
+    }
+  ],
+  "videos": [
+    {
+      "id": 1,
+      "categoriaId": 1,
+      "titulo": "The mind behind Linux | Linus Torvalds",
+      "descricao": "Linus Torvalds transformed technology twice — first with the Linux kernel, which helps power the Internet, and again with Git, the source code management system used by developers worldwide.",
+      "url": "https://www.youtube.com/watch?v=o8NPllzkFhE&t"
+    },
+    {
+      "id": 2,
+      "categoriaId": 2,
+      "titulo": "Como fazer um React e aprender a ideia do Virtual DOM na prática",
+      "descricao": "Já parou pra pensar como que o React renderiza as coisas na tela?",
+      "url": "https://www.youtube.com/watch?v=5MzOCxSWrrc"
+    },
+    {
+      "titulo": "Why C is so Influential - Computerphile",
+      "url": "https://www.youtube.com/watch?v=ci1PJexnfNE&t",
+      "categoriaId": 1,
+      "id": 3
+    }
+  ]
 }
